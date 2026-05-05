@@ -76,15 +76,15 @@ portfolio-final/
 
 | Section | Description |
 |---------|-------------|
-| **Hero** | Animated avatar, typewriter, magnetic CTAs |
+| **Hero** | Operations automation positioning, typewriter, magnetic CTAs |
 | **About** | Business operations + automation hybrid story |
 | **Timeline** | Animated career journey (2019–present) |
-| **Stats** | Animated counters (experience, points of sale, tools) |
+| **Stats** | Business experience, points of sale opened, weekly flow managed, automation tools built |
 | **Skills** | 3D tilt cards with progress rings |
-| **Services** | Freelance offerings with pricing |
-| **Projects** | 7 showcase cards with tilt effects |
+| **Services** | Python Automation, Data Processing & Reports, API Integration & Alerts, Business Workflow Automation, Website + Chatbot Lead Flow |
+| **Projects** | 8 showcase cards (automation, dashboards, data pipelines, alert systems, websites, chatbot/lead flows) + Technical Labs section |
 | **Contact** | Glass card with email, location, socials |
-| **Chatbot** | Offline assistant widget with smart responses |
+| **Chatbot** | Offline assistant with smart pre-built responses (no live AI API) |
 
 ## 🌐 Deploy
 
