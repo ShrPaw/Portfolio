@@ -3,10 +3,11 @@ import { useRef } from "react";
 
 const paragraphs = [
   "I'm Nicolas Bustamante, a bilingual Operations Automation Specialist from Cochabamba, Bolivia.",
-  "My background combines customer success, sales operations, account management, and self-taught Python development. I have worked in multinational environments where clear communication, fast problem-solving, and client trust mattered every day.",
-  "At AB InBev, I helped open approximately 100 new points of sale in a competitive sales environment. At Intcomex Bolivia, I worked with major technology wholesalers, managed high-value client relationships, coordinated activations and trainings, and supported daily commercial operations.",
-  "On the technical side, I build Python automation tools, data workflows, API integrations, alert systems, dashboards, and simple internal tools designed to reduce manual work and organize messy processes.",
-  "My strongest value is not just writing code. It is understanding real business operations and turning repetitive, manual, or chaotic workflows into simple systems that work.",
+  "My background combines customer success, sales operations, account management, and self-taught Python development. I have worked in environments where clients needed fast answers, operations had to move quickly, and small errors could create real pressure.",
+  "At AB InBev, I helped open approximately 100 new points of sale in a competitive sales environment. At Intcomex Bolivia, I supported commercial operations, worked with major technology wholesalers, coordinated client needs, activations, training, and issue resolution.",
+  "That business experience matters because automation is not just about writing code. It is about understanding where work gets stuck, where people waste time, where information gets lost, and where a simple system can make daily operations easier.",
+  "On the technical side, I build Python automation tools, data workflows, API integrations, alert systems, dashboards, websites, and simple internal tools designed to reduce manual work and organize messy processes.",
+  "My strongest value is the combination: I understand operations, clients, and business pressure — and I can build practical tools to reduce that pressure.",
 ];
 
 export default function About() {

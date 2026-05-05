@@ -5,55 +5,61 @@ interface Message { id: string; text: string; isUser: boolean; }
 
 // Offline chatbot with pre-built responses — no live AI API connected
 const RESPONSES: Record<string, string> = {
-  default: "Hey! I'm Nicolas' portfolio assistant. I can tell you about his business operations background, customer success experience, Python automation work, data pipelines, dashboards, alert systems, and bilingual EN/ES communication. You can also reach him directly through the contact section.",
+  default: "Hey! I'm Nicolas' portfolio assistant. I can help you understand how Nicolas can reduce manual work with Python automation, data workflows, API integrations, reports, dashboards, alerts, and client-facing tools.",
+
+  pain: "If your business has repetitive tasks, messy spreadsheets, manual reports, disconnected tools, or follow-ups that depend on memory, Nicolas can help turn that into a simple automated workflow.",
 
   skills: "Nicolas brings a practical mix of business operations and technical automation:\n\n⚙️ Python Automation — scripts, reports, data workflows, APIs, and alert systems\n📊 Data Operations — CSV/Excel cleanup, dashboards, market data pipelines, and reporting\n🤝 Customer Success — account management, client communication, issue resolution, and sales operations\n🌎 Bilingual — Spanish native + English C1 for international/remote teams\n🧩 Business Workflow Thinking — he understands real operational pain points and builds tools to reduce manual work.",
 
-  experience: "Here's Nicolas' career journey:\n\n🏦 2019 — Banco Nacional de Bolivia (BNB): Selected among hundreds for the Pasaporte BNB program. Rotated through Retail Banking, Corporate Banking, Credit Risk, HR, Operations, Financial Leasing, and more.\n\n🍺 2020–2022 — Cervecería Boliviana Nacional (AB InBev): Sales Executive during the Direct Sales launch. Opened approximately 100 points of sale, consistently ranked among top performers out of 50+ executives.\n\n💼 2022–2025 — Intcomex Bolivia: Key Account Manager handling the region's largest wholesalers. Managed high-value client relationships, organized activations and trainings, and built Python scripts to automate sales reports and dashboards.\n\n🚀 Now — Focused on Python automation, data workflows, API integrations, and freelance projects via Upwork.",
+  services: "Nicolas helps with:\n• Python automation scripts\n• CSV / Excel cleanup\n• Automated reports\n• API integrations\n• Telegram / email alerts\n• Business workflow automation\n• Simple dashboards\n• Websites with chatbot-style lead flows",
 
-  bnb: "In 2019, Nicolas was selected among hundreds of applicants for the Pasaporte BNB program at Banco Nacional de Bolivia — the country's second-largest bank. Only 4 candidates were chosen for this intensive 6-month rotational program. He rotated through every key department: Retail Banking, Corporate & Institutional Banking, Credit Risk, HR, Operations & Systems, Financial Leasing, Teller Operations, and large-scale credit approvals.",
+  experience: "Here's Nicolas' career journey:\n\n🏦 2019 — Banco Nacional de Bolivia (BNB): Selected among hundreds for the Pasaporte BNB program. Rotated through Retail Banking, Corporate Banking, Credit Risk, HR, Operations, Financial Leasing, and more.\n\n🍺 2020–2022 — Cervecería Boliviana Nacional (AB InBev): Sales Executive during the Direct Sales launch. Opened approximately 100 points of sale, consistently ranked among top performers out of 50+ executives.\n\n💼 2022–2025 — Intcomex Bolivia: Supported commercial operations, worked with major technology wholesalers, coordinated client needs, activations, training, and issue resolution. In parallel, built self-directed Python automation projects.\n\n🚀 Now — Focused on Python automation, data workflows, API integrations, and freelance projects via Upwork.",
 
-  abinbev: "Nicolas joined Cervecería Boliviana Nacional (CBN – AB InBev), Bolivia's largest beverage company, as a Sales Executive during the launch of their Direct Sales project. He opened and coded approximately 100 points of sale across his region, managed a diverse portfolio of small stores to wholesalers, and consistently met or exceeded monthly targets. He was frequently recognized as one of the top salespeople among approximately 50 executives.",
+  intcomex: "At Intcomex, Nicolas gained real business operations and customer success experience. His Python automation work comes from independent projects and technical builds, not from falsely claiming internal Intcomex automation pipelines. He supported high-pressure commercial operations, client coordination, sales reporting needs, and issue resolution in a multinational technology distribution environment.",
 
-  intcomex: "At Intcomex, a leading Latin American technology distributor, Nicolas combined Customer Success with sales and technical automation. He managed enterprise accounts — resellers, integrators, and companies buying hardware, software, and cloud solutions. He ensured high post-sale satisfaction, resolved issues efficiently, and maintained bilingual communication (Spanish/English) with clients and regional teams. On the technical side, he built custom Python scripts for automated sales reports and account performance dashboards.",
+  bnb: "In 2019, Nicolas was selected among hundreds of applicants for the Pasaporte BNB program at Banco Nacional de Bolivia — the country's second-largest bank. Only 4 candidates were chosen for this intensive 6-month rotational program.",
 
-  projects: "Key projects Nicolas has built:\n\n🌐 Business Automation Portfolio Website — Built with React, TypeScript, Tailwind, Framer Motion, and an offline chatbot widget.\n\n📡 Real-Time Monitoring Dashboard (MANTIS) — Live data ingestion, event detection, dashboard logic, and alert-style architecture.\n\n📊 Python Market Data Pipeline — Data pipelines to collect, clean, aggregate, and structure high-volume market data.\n\n🔔 Automated Signal & Alert System — Continuous monitoring with Telegram notifications and execution-ready architecture.\n\n⚙️ Enterprise Process Automation — Python scripts for commercial operations, account tracking, and sales reporting.\n\n🛒 Conversion-Focused Business Websites — Landing page and e-commerce projects with clear CTAs and conversion flow.\n\n📈 TradingView Multi-Timeframe Indicator — Session open/close levels across timeframes as proof of scripting ability.",
+  abinbev: "Nicolas joined Cervecería Boliviana Nacional (CBN – AB InBev), Bolivia's largest beverage company, as a Sales Executive during the launch of their Direct Sales project. He opened and coded approximately 100 points of sale across his region.",
 
-  trading: "Nicolas has built trading-related tools as technical automation projects, including alert systems, market data pipelines, dashboards, and monitoring workflows. He does not promise trading profits or sell guaranteed trading strategies. These projects demonstrate his ability to work with real-time data, APIs, and automated monitoring — skills that transfer directly to business automation.",
+  projects: "Key projects Nicolas has built:\n\n🌐 Business Automation Portfolio Website — Client-facing site with service positioning and chatbot interaction.\n\n📡 Real-Time Monitoring Dashboard (MANTIS) — Live data ingestion, event detection, and monitoring architecture.\n\n🎛️ Orderflow Cockpit — Interactive order-flow analysis with persistent bubbles and auction zones.\n\n📊 Python Market Data Pipeline — High-volume data collection, cleaning, aggregation, and validation.\n\n🔔 Automated Signal & Alert System — Monitoring with Telegram notifications and execution-ready architecture.\n\n🏋️ TEMPLO Gym Website — Premium fitness landing page with conversion-focused sections.\n\n✈️ Kovar Viajes — Travel agency landing page focused on trust and conversion.\n\n💬 Bilingual Gym Chatbot — Chatbot project with lead capture and booking flow.",
 
-  hire: "You can hire Nicolas for freelance projects through Upwork or contact him directly for remote contract opportunities.\n\nBest-fit projects:\n• Python automation scripts\n• Data cleaning and reporting workflows\n• API integrations\n• Telegram/alert systems\n• Business workflow automation\n• Simple dashboards and internal tools\n\nAll work is done personally by Nicolas — no outsourcing.",
+  trading: "Nicolas has built trading-related tools as technical automation projects: monitoring dashboards, alert systems, data pipelines, and validation tools. He does not promise profits or sell guaranteed trading strategies.",
 
-  contact: "Here's how to reach Nicolas:\n\n📧 Email: nbustamante.work@gmail.com\n💬 WhatsApp: +59172512525\n🔗 LinkedIn: linkedin.com/in/nicolas-bustamante-526464184/\n💼 Upwork: upwork.com/freelancers/~015e58af861eafe53c\n🐙 GitHub: github.com/ShrPaw\n\n📍 Based in Cochabamba, Bolivia (GMT-4). Bilingual EN/ES. Currently available for freelance, contract & remote roles!",
+  hire: "The best first project is usually small: one script, one report, one API connection, one alert workflow, or one manual task you want to stop repeating.\n\nAll work is done personally by Nicolas — no outsourcing.",
 
-  price: "Pricing depends on project scope:\n\n⚙️ Python automation scripts: $50–200\n📊 Data processing & reports: $50–300\n🔌 API integration & alerts: $100–400\n🏢 Business workflow automation: $100–400\n💬 Website + chatbot demo: $150–500\n\nAll work is done personally by Nicolas — no outsourcing, no middlemen. For custom quotes, reach out at nbustamante.work@gmail.com or WhatsApp +59172512525.",
+  contact: "Here's how to reach Nicolas:\n\n📧 Email: nbustamante.work@gmail.com\n💬 WhatsApp: +59172512525\n🔗 LinkedIn: linkedin.com/in/nicolas-bustamante-526464184/\n💼 Upwork: upwork.com/freelancers/~015e58af861eafe53c\n🐙 GitHub: github.com/ShrPaw\n\n📍 Based in Cochabamba, Bolivia (GMT-4). Bilingual EN/ES.",
 
-  python: "Nicolas has been working with Python for several years. His Python work spans:\n\n⚙️ Process Automation — Custom scripts that saved hours of manual work (sales reports, account dashboards)\n📊 Data Pipelines — Automated report generation, data cleaning, performance tracking\n🔗 API Integrations — REST APIs, Telegram bots, webhooks, data collection\n🔔 Alert Systems — Automated monitoring with notification workflows\n\nHe's comfortable with libraries like pandas, requests, openpyxl, and various API/HTTP libraries.",
+  price: "Pricing depends on project scope:\n\n⚙️ Python automation scripts: $50–200\n📊 Data processing & reports: $75–300\n🔌 API integration & alerts: $100–400\n🏢 Business workflow automation: $100–400\n💬 Website + chatbot lead flow: $150–500\n\nAll work is done personally by Nicolas — no outsourcing, no middlemen.",
+
+  python: "Nicolas has been working with Python for several years. His Python work spans:\n\n⚙️ Process Automation — Custom scripts that reduce manual work\n📊 Data Pipelines — Automated report generation, data cleaning\n🔗 API Integrations — REST APIs, Telegram bots, webhooks\n🔔 Alert Systems — Automated monitoring with notification workflows",
 
   ai: "Nicolas builds practical chatbot-style and automation-ready tools for business use. This portfolio currently uses an offline assistant with smart pre-built responses, designed as a fast demo of client-facing interaction.\n\nFor client projects, he can help structure chatbot flows, knowledge-base style responses, and automation-ready contact or support workflows.",
 
-  languages: "Nicolas is fully bilingual with an official certification:\n\n🇧🇴 Spanish — Native speaker (Bolivia)\n🇺🇸 English — C1 Advanced (EF SET Certified, 63/100)\n  • Reading: C2 Proficient\n  • Listening: C1 Advanced\n\nHe used English daily in multinational environments (AB InBev, Intcomex) for client communication, technical documentation, and regional team coordination.",
+  languages: "Nicolas is fully bilingual:\n\n🇧🇴 Spanish — Native speaker (Bolivia)\n🇺🇸 English — C1 Advanced (EF SET Certified, 63/100)\n\nHe used English daily in multinational environments (AB InBev, Intcomex) for client communication and regional team coordination.",
 
-  portfolio: "This portfolio website was built entirely from scratch by Nicolas. Here's the tech stack:\n\n⚛️ React 19 + TypeScript — Modern component architecture\n⚡ Vite 6 — Lightning-fast builds\n🎨 Tailwind CSS 4 — Utility-first styling\n✨ Framer Motion — Smooth animations\n💬 Offline chatbot widget (me!) with keyword-based smart responses\n📱 Fully responsive — mobile, tablet, desktop\n\nThe whole site is a project in itself — clean code, production-ready, deployable to Vercel/Netlify.",
+  portfolio: "This portfolio website was built entirely from scratch by Nicolas:\n\n⚛️ React 19 + TypeScript\n⚡ Vite 6\n🎨 Tailwind CSS 4\n✨ Framer Motion animations\n💬 Offline chatbot widget (me!) with smart responses\n📱 Fully responsive\n\nClean code, production-ready, deployable to Vercel/Netlify.",
 };
 
 function getResponse(input: string): string {
   const lower = input.toLowerCase();
   if (lower.match(/portfolio|website|this site|built this|tech stack|stack|react|framer/)) return RESPONSES.portfolio;
-  if (lower.match(/skill|what.*do|capabil|technolog/)) return RESPONSES.skills;
+  if (lower.match(/pain|manual|slow|waste|repeat|messy|stuck|frustrat|problem/)) return RESPONSES.pain;
+  if (lower.match(/service|what.*do|offer|help.*with/)) return RESPONSES.services;
+  if (lower.match(/skill|capabil|technolog/)) return RESPONSES.skills;
+  if (lower.match(/intcomex|distribut|wholesale/)) return RESPONSES.intcomex;
   if (lower.match(/bnb|banco|bank|pasaporte/)) return RESPONSES.bnb;
   if (lower.match(/ab ?inbev|cbn|cervecer|beer|beverage/)) return RESPONSES.abinbev;
-  if (lower.match(/intcomex|distribut|wholesale/)) return RESPONSES.intcomex;
   if (lower.match(/experienc|background|history|career|journey|timeline/)) return RESPONSES.experience;
   if (lower.match(/project|built|showcase/)) return RESPONSES.projects;
   if (lower.match(/trad|bot|crypto|scalp|pine|indicator/)) return RESPONSES.trading;
-  if (lower.match(/hire|freelance|job|employ|available|work|upwork/)) return RESPONSES.hire;
+  if (lower.match(/hire|freelance|job|employ|available|work|upwork|start|first.*project/)) return RESPONSES.hire;
   if (lower.match(/contact|email|reach|location|where|whatsapp/)) return RESPONSES.contact;
   if (lower.match(/price|cost|how much|budget|quote|rate/)) return RESPONSES.price;
   if (lower.match(/python|script|automat|ccxt|pandas/)) return RESPONSES.python;
   if (lower.match(/ai|chatbot|llm|gemini|openai|gpt/)) return RESPONSES.ai;
   if (lower.match(/language|bilingual|spanish|english/)) return RESPONSES.languages;
   if (lower.match(/hi|hello|hey|sup|greet/)) return RESPONSES.default;
-  return "That's a great question! I'd recommend reaching out to Nicolas directly for detailed answers — you can email him at nbustamante.work@gmail.com or WhatsApp: +59172512525. Click 'Hire Me on Upwork' in the Contact section for freelance projects. Is there anything specific about his skills or projects I can help with?";
+  return "That's a great question! I'd recommend reaching out to Nicolas directly — you can email him at nbustamante.work@gmail.com or WhatsApp: +59172512525. Click 'Hire Me on Upwork' in the Contact section for freelance projects. Is there anything specific about his skills or projects I can help with?";
 }
 
 export default function ChatbotWidget() {
@@ -138,6 +144,7 @@ export default function ChatbotWidget() {
             </div>
 
             <div className="p-4 border-t border-[#E2E8F0] bg-white">
+              <p className="text-[10px] text-[#94A3B8] mb-2 text-center">Tell me what you are doing manually right now.</p>
               <div className="flex gap-2">
                 <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && (e.preventDefault(), sendMessage())} placeholder="Ask me anything..." disabled={isTyping} className="flex-1 px-4 py-3 bg-[#F8FAFC] text-[#0F172A] rounded-xl text-sm placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#1A73E8]/30 focus:bg-white transition-all duration-200 disabled:opacity-50" />
                 <motion.button onClick={sendMessage} disabled={isTyping || !inputValue.trim()} className="bg-[#1A73E8] text-white w-11 h-11 rounded-xl flex items-center justify-center hover:bg-blue-700 transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

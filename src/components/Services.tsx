@@ -1,15 +1,17 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-interface Service { icon: string; title: string; description: string; features: string[]; priceRange: string; popular?: boolean; color: string; bgColor: string; }
+interface Service { icon: string; title: string; emotionalAngle: string; description: string; features: string[]; priceRange: string; cta: string; popular?: boolean; color: string; bgColor: string; }
 
 const services: Service[] = [
   {
     icon: "⚙️",
     title: "Python Automation",
-    description: "Custom scripts that reduce manual work, process files, organize data, and connect simple workflows.",
-    features: ["Custom Python scripts", "Scheduled task automation", "File and data processing", "Workflow cleanup"],
+    emotionalAngle: "For the tasks you keep doing manually.",
+    description: "Custom Python scripts that reduce repetitive work, process files, organize data, and turn manual steps into simple automated workflows.",
+    features: ["Custom Python scripts", "File and folder automation", "CSV / Excel processing", "Scheduled task workflows"],
     priceRange: "$50–200",
+    cta: "Automate this task",
     popular: true,
     color: "#3776AB",
     bgColor: "#3776AB10",
@@ -17,36 +19,44 @@ const services: Service[] = [
   {
     icon: "📊",
     title: "Data Processing & Reports",
-    description: "Turn messy CSV, Excel, or operational data into clean outputs, reports, and dashboards.",
-    features: ["CSV/Excel cleanup", "Automated reports", "Data transformation", "Dashboard-ready outputs"],
-    priceRange: "$50–300",
+    emotionalAngle: "For messy data that slows down decisions.",
+    description: "Turn messy CSV, Excel, or operational data into clean outputs, automated reports, and dashboard-ready files.",
+    features: ["CSV / Excel cleanup", "Data transformation", "Automated reports", "Dashboard-ready outputs"],
+    priceRange: "$75–300",
+    cta: "Clean my data",
     color: "#22C55E",
     bgColor: "#22C55E10",
   },
   {
     icon: "🔌",
     title: "API Integration & Alerts",
-    description: "Connect APIs, collect data, send notifications, and move information between tools.",
-    features: ["API data collection", "Telegram/notification alerts", "Webhook workflows", "Simple backend automation"],
+    emotionalAngle: "For tools that do not talk to each other.",
+    description: "Connect APIs, collect data, send notifications, and move information between tools so you do not have to check everything manually.",
+    features: ["API data collection", "Webhook workflows", "Telegram / email alerts", "Simple backend automation"],
     priceRange: "$100–400",
+    cta: "Connect my tools",
     color: "#1A73E8",
     bgColor: "#1A73E810",
   },
   {
     icon: "🏢",
     title: "Business Workflow Automation",
-    description: "Automation for sales, support, reporting, customer follow-up, and internal operations.",
-    features: ["Sales operations support", "Customer workflow automation", "CRM-ready processes", "Operational efficiency tools"],
+    emotionalAngle: "For operations that depend too much on memory, messages, and manual follow-up.",
+    description: "Automation for sales, customer support, reporting, follow-up, and internal operations — built to reduce errors and make daily work easier.",
+    features: ["Sales operations workflows", "Customer follow-up systems", "CRM-ready processes", "Manual process cleanup"],
     priceRange: "$100–400",
+    cta: "Fix my workflow",
     color: "#F59E0B",
     bgColor: "#F59E0B10",
   },
   {
     icon: "💬",
-    title: "Website + Chatbot Demo",
-    description: "Simple client-facing websites with chatbot-style interaction and automation-ready contact flows.",
-    features: ["Responsive landing page", "Chatbot-style assistant", "Lead/contact flow", "Service presentation"],
+    title: "Website + Chatbot Lead Flow",
+    emotionalAngle: "For visitors who leave because your business does not guide them clearly.",
+    description: "Simple client-facing websites with chatbot-style interaction, service presentation, and contact/lead capture flow.",
+    features: ["Responsive landing page", "Chatbot-style assistant", "Contact / lead flow", "Service presentation"],
     priceRange: "$150–500",
+    cta: "Build my lead flow",
     color: "#EC4899",
     bgColor: "#EC489910",
   },
@@ -67,13 +77,14 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
     >
       {service.popular && <div className="bg-[#1A73E8] text-white text-xs font-bold text-center py-1.5 tracking-wider uppercase">⭐ Most Popular</div>}
       <div className="p-6 md:p-8">
-        <div className="flex items-start gap-4 mb-5">
+        <div className="flex items-start gap-4 mb-4">
           <div className="w-14 h-14 rounded-xl flex items-center justify-center text-2xl flex-shrink-0" style={{ backgroundColor: service.bgColor }}>{service.icon}</div>
           <div>
             <h3 className="text-xl font-bold text-[#0F172A]">{service.title}</h3>
-            <div className="text-sm font-bold mt-1" style={{ color: service.color }}>{service.priceRange} per project</div>
+            <p className="text-sm text-[#64748B] mt-1 italic">{service.emotionalAngle}</p>
           </div>
         </div>
+        <div className="text-sm font-bold mb-4" style={{ color: service.color }}>{service.priceRange} per project</div>
         <p className="text-sm text-[#64748B] leading-relaxed mb-5">{service.description}</p>
         <ul className="space-y-2.5 mb-6">
           {service.features.map((feature, i) => (
@@ -91,7 +102,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
           whileHover={{ backgroundColor: service.color, color: "white" }}
           whileTap={{ scale: 0.97 }}
         >
-          Get a Quote →
+          {service.cta} →
         </motion.a>
       </div>
     </motion.div>
@@ -109,14 +120,14 @@ export default function Services() {
       <div ref={ref} className="max-w-5xl mx-auto relative">
         <motion.div className="text-center mb-16" initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
           <motion.span className="inline-block text-xs font-bold tracking-[0.25em] text-[#1A73E8] uppercase mb-4 px-4 py-2 bg-[#1A73E8]/5 rounded-full" initial={{ opacity: 0, scale: 0.8 }} animate={isInView ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.5, delay: 0.2 }}>Freelance Services</motion.span>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mt-4">What I Can Build For You</h2>
-          <p className="text-[#64748B] mt-4 max-w-lg mx-auto">From quick scripts to operational workflows — I build practical systems that save time, reduce errors, and make daily work easier.</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mt-4">Services that remove manual work</h2>
+          <p className="text-[#64748B] mt-4 max-w-lg mx-auto">If your business depends on repetitive tasks, messy spreadsheets, disconnected tools, or manual follow-up, I can help turn that into a simple working system.</p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, idx) => <ServiceCard key={idx} service={service} index={idx} />)}
         </div>
         <motion.div className="mt-14 text-center" initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.8 }}>
-          <p className="text-sm text-[#64748B] mb-4">Need something custom? Let's talk.</p>
+          <p className="text-sm text-[#64748B] mb-4">Need something custom? Tell me what is slowing you down.</p>
           <motion.a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }); }} className="inline-flex items-center gap-2 px-6 py-3 bg-[#0F172A] text-white font-semibold text-sm rounded-xl hover:bg-[#0F172A]/90 transition-colors duration-200" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
             Contact Me Directly →
           </motion.a>

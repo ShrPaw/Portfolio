@@ -24,8 +24,8 @@ export default function Contact() {
       <div ref={ref} className="max-w-3xl mx-auto">
         <motion.div className="text-center mb-14" initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
           <motion.span className="inline-block text-xs font-bold tracking-[0.25em] text-[#1A73E8] uppercase mb-4 px-4 py-2 bg-[#1A73E8]/5 rounded-full" initial={{ opacity: 0, scale: 0.8 }} animate={isInView ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.5, delay: 0.2 }}>Get in Touch</motion.span>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mt-4">Let's Work Together</h2>
-          <p className="text-[#64748B] mt-4 max-w-md mx-auto">Ready to automate a manual process, clean your data, connect an API, or build a simple internal tool? Let's talk.</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mt-4">Have a manual process you want to remove?</h2>
+          <p className="text-[#64748B] mt-4 max-w-md mx-auto">Whether it is messy data, repetitive reporting, disconnected tools, or a workflow that depends too much on manual effort — tell me what is slowing you down.</p>
         </motion.div>
 
         <motion.div className="bg-white rounded-3xl border border-[#E2E8F0] shadow-xl shadow-[#0F172A]/5 p-8 md:p-12 relative overflow-hidden" initial={{ opacity: 0, y: 40 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay: 0.2 }}>
@@ -93,6 +93,9 @@ export default function Contact() {
             </div>
 
             {/* CTA */}
+            <div className="text-center">
+              <p className="text-sm text-[#94A3B8] italic mb-4">No pressure. Start with one small workflow, one report, or one script.</p>
+            </div>
             <motion.a href="https://www.upwork.com/freelancers/~015e58af861eafe53c?mp_source=share" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 rounded-xl bg-[#0F172A] text-white font-semibold text-base hover:bg-[#0F172A]/90 transition-colors duration-200 shadow-lg shadow-[#0F172A]/20" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               Hire Me on Upwork →
             </motion.a>

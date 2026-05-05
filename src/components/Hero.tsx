@@ -101,7 +101,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.p className="text-base md:text-lg text-[#64748B] max-w-xl leading-relaxed" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }}>
-          I help businesses reduce manual work with Python automation, data workflows, API integrations, reports, dashboards, and practical internal tools.
+          Turn repetitive work, messy data, and disconnected tools into simple automated systems.
         </motion.p>
 
         <motion.div className="flex flex-col sm:flex-row gap-4 mt-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.8 }}>
@@ -118,10 +118,14 @@ export default function Hero() {
           Download Resume
         </motion.a>
 
-        <motion.div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-[#64748B]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1 }}>
+        <motion.p className="mt-2 text-sm text-[#94A3B8] italic max-w-md" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1 }}>
+          Have a manual process that keeps wasting your time? I can help turn it into a simple system.
+        </motion.p>
+
+        <motion.div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-[#64748B]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1.1 }}>
           <span className="flex items-center gap-1.5"><span className="text-lg">🇧🇴</span> Bolivia</span>
           <span className="w-1 h-1 bg-[#CBD5E1] rounded-full" />
-          <span className="flex items-center gap-1.5"><span className="text-lg">🇺🇸</span> Remote Clients</span>
+          <span className="flex items-center gap-1.5"><span className="text-lg">🌍</span> Remote Clients</span>
           <span className="w-1 h-1 bg-[#CBD5E1] rounded-full" />
           <span>Bilingual EN/ES</span>
         </motion.div>
