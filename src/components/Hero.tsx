@@ -100,7 +100,11 @@ export default function Hero() {
           <TypewriterText />
         </motion.div>
 
-        <motion.p className="text-base md:text-lg text-[#64748B] max-w-xl leading-relaxed" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }}>
+        <motion.p className="text-2xl md:text-3xl font-medium text-[#64748B] max-w-2xl leading-relaxed" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }}>
+          I help businesses reduce manual work with Python automation, data workflows, API integrations, reports, dashboards, and practical internal tools.
+        </motion.p>
+
+        <motion.p className="text-base md:text-lg text-[#94A3B8] italic max-w-xl" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.75 }}>
           Turn repetitive work, messy data, and disconnected tools into simple automated systems.
         </motion.p>
 
@@ -117,10 +121,6 @@ export default function Hero() {
           <svg className="w-4 h-4 group-hover:translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
           Download Resume
         </motion.a>
-
-        <motion.p className="mt-2 text-sm text-[#94A3B8] italic max-w-md" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1 }}>
-          Have a manual process that keeps wasting your time? I can help turn it into a simple system.
-        </motion.p>
 
         <motion.div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-[#64748B]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1.1 }}>
           <span className="flex items-center gap-1.5"><span className="text-lg">🇧🇴</span> Bolivia</span>

@@ -29,8 +29,6 @@ const RESPONSES: Record<string, string> = {
 
   contact: "Here's how to reach Nicolas:\n\n📧 Email: nbustamante.work@gmail.com\n💬 WhatsApp: +59172512525\n🔗 LinkedIn: linkedin.com/in/nicolas-bustamante-526464184/\n💼 Upwork: upwork.com/freelancers/~015e58af861eafe53c\n🐙 GitHub: github.com/ShrPaw\n\n📍 Based in Cochabamba, Bolivia (GMT-4). Bilingual EN/ES.",
 
-  price: "Pricing depends on project scope:\n\n⚙️ Python automation scripts: $50–200\n📊 Data processing & reports: $75–300\n🔌 API integration & alerts: $100–400\n🏢 Business workflow automation: $100–400\n💬 Website + chatbot lead flow: $150–500\n\nAll work is done personally by Nicolas — no outsourcing, no middlemen.",
-
   python: "Nicolas has been working with Python for several years. His Python work spans:\n\n⚙️ Process Automation — Custom scripts that reduce manual work\n📊 Data Pipelines — Automated report generation, data cleaning\n🔗 API Integrations — REST APIs, Telegram bots, webhooks\n🔔 Alert Systems — Automated monitoring with notification workflows",
 
   ai: "Nicolas builds practical chatbot-style and automation-ready tools for business use. This portfolio currently uses an offline assistant with smart pre-built responses, designed as a fast demo of client-facing interaction.\n\nFor client projects, he can help structure chatbot flows, knowledge-base style responses, and automation-ready contact or support workflows.",
@@ -54,7 +52,6 @@ function getResponse(input: string): string {
   if (lower.match(/trad|bot|crypto|scalp|pine|indicator/)) return RESPONSES.trading;
   if (lower.match(/hire|freelance|job|employ|available|work|upwork|start|first.*project/)) return RESPONSES.hire;
   if (lower.match(/contact|email|reach|location|where|whatsapp/)) return RESPONSES.contact;
-  if (lower.match(/price|cost|how much|budget|quote|rate/)) return RESPONSES.price;
   if (lower.match(/python|script|automat|ccxt|pandas/)) return RESPONSES.python;
   if (lower.match(/ai|chatbot|llm|gemini|openai|gpt/)) return RESPONSES.ai;
   if (lower.match(/language|bilingual|spanish|english/)) return RESPONSES.languages;

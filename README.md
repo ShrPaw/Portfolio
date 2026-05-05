@@ -2,7 +2,7 @@
 
 > Python automation, data workflows, API integrations, dashboards, alert systems, business operations, and client-facing tools.
 
-A premium portfolio website showcasing Python automation, data workflows, API integrations, business operations, client-facing tools, and practical automation systems.
+A portfolio website showcasing Python automation, data workflows, API integrations, dashboards, alert systems, business operations, client-facing tools, and practical automation systems.
 
 ## ✨ Features
 
@@ -78,15 +78,13 @@ portfolio-final/
 
 | Section | Description |
 |---------|-------------|
-| **Hero** | Operations automation positioning, typewriter, magnetic CTAs |
-| **About** | Business operations + automation hybrid story |
-| **Timeline** | Animated career journey (2019–present) |
+| **Hero** | Operations automation positioning and Upwork/remote CTA |
+| **About** | Business operations + customer success + Python automation |
+| **Skills** | Python automation, APIs, data operations, business operations, customer success, bilingual EN/ES |
+| **Services** | Automation, data workflows, API alerts, business workflows, and lead-flow systems without public pricing |
+| **Projects** | Featured automation projects + technical labs, including dashboards, data pipelines, alert systems, websites, chatbot/lead flows, and experiments |
+| **Chatbot** | Offline portfolio assistant with smart pre-built responses |
 | **Stats** | Business experience, points of sale opened, weekly flow managed, automation tools built |
-| **Skills** | 3D tilt cards with progress rings |
-| **Services** | Python Automation, Data Processing & Reports, API Integration & Alerts, Business Workflow Automation, Website + Chatbot Lead Flow |
-| **Projects** | 8 showcase cards (automation, dashboards, data pipelines, alert systems, websites, chatbot/lead flows) + Technical Labs section |
-| **Contact** | Glass card with email, location, socials |
-| **Chatbot** | Offline assistant with smart pre-built responses (no live AI API) |
 
 ## 🌐 Deploy
 
