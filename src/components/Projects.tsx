@@ -29,7 +29,7 @@ const projects: Project[] = [
     tags: ["JavaScript", "Dashboard", "Visualization", "Monitoring"],
     link: "https://github.com/ShrPaw/orderflow-cockpit",
     color: "#8B5CF6",
-    icon: "🎛️",
+    icon: "🧭",
   },
   {
     title: "Python Market Data Pipeline",
@@ -111,7 +111,7 @@ const labs: Lab[] = [
     tags: ["Python", "Crypto", "Microstructure", "Data Analysis"],
     link: "https://github.com/ShrPaw/chipusdt-platform",
     color: "#DDA0DD",
-    icon: "🧪",
+    icon: "📈",
   },
   {
     title: "Prediction Market Orderbook Automation Lab",
