@@ -1,6 +1,6 @@
-# Nicolas Bustamante — Portfolio
+# Nicolas Bustamante — Operations Automation Portfolio
 
-A premium, production-ready portfolio website showcasing Data Analysis, AI Automation, Python Development, and Trading Systems expertise.
+A premium portfolio website showcasing Python automation, data workflows, API integrations, business operations, client-facing tools, and practical automation systems.
 
 ## ✨ Features
 
@@ -10,7 +10,7 @@ A premium, production-ready portfolio website showcasing Data Analysis, AI Autom
 - **3D Tilt Cards** — Skills and projects with perspective transforms
 - **Animated Stats Counter** — Numbers count up on scroll
 - **Glass Morphism Navbar** — Scroll-aware with active section indicator
-- **AI Chatbot Widget** — Offline assistant with smart responses
+- **Offline Chatbot Widget** — Smart pre-built responses (no live AI API)
 - **Custom Cursor** — Glowing orb with trailing effect (desktop)
 - **Scroll Progress Bar** — Gradient indicator at top of page
 - **Fully Responsive** — Works on mobile, tablet, and desktop
@@ -77,14 +77,14 @@ portfolio-final/
 | Section | Description |
 |---------|-------------|
 | **Hero** | Animated avatar, typewriter, magnetic CTAs |
-| **About** | Staggered text reveal with key highlights |
+| **About** | Business operations + automation hybrid story |
 | **Timeline** | Animated career journey (2019–present) |
-| **Stats** | Animated counters (years, bots, revenue) |
+| **Stats** | Animated counters (experience, points of sale, tools) |
 | **Skills** | 3D tilt cards with progress rings |
 | **Services** | Freelance offerings with pricing |
-| **Projects** | 6 showcase cards with tilt effects |
+| **Projects** | 7 showcase cards with tilt effects |
 | **Contact** | Glass card with email, location, socials |
-| **Chatbot** | Offline AI assistant widget |
+| **Chatbot** | Offline assistant widget with smart responses |
 
 ## 🌐 Deploy
 

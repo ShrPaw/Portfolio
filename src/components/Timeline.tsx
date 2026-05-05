@@ -8,9 +8,9 @@ interface TimelineEntry {
 
 const timelineData: TimelineEntry[] = [
   { year: "2019", title: "Pasaporte BNB Program", company: "Banco Nacional de Bolivia", description: "Selected among hundreds of applicants for a 6-month intensive rotation across all major banking departments. Presented a debit card incentive project directly to vice-presidents.", status: "completed", color: "#22C55E", icon: "🏦" },
-  { year: "2020–22", title: "Sales Executive – Direct Sales Launch", company: "Cervecería Boliviana Nacional (AB InBev)", description: "Opened and coded ~100 points of sale during AB InBev's Direct Sales launch. Consistently ranked among top performers in a team of 50+ executives.", status: "completed", color: "#22C55E", icon: "🍺" },
-  { year: "2022–25", title: "Key Account Manager – Wholesalers", company: "Intcomex Bolivia", description: "Trusted relationship manager for the 4 largest wholesalers in Cochabamba. Handled ~2 million bolivianos monthly while organizing trainings and activations.", status: "completed", color: "#22C55E", icon: "💼" },
-  { year: "Now", title: "AI Developer & Python Automation", company: "Upwork & Independent Clients", description: "Building AI prototypes, Python automations, trading bots, and providing bilingual customer success consulting for international clients.", status: "in-progress", color: "#1A73E8", icon: "🚀" },
+  { year: "2020–22", title: "Sales Executive – Direct Sales Launch", company: "Cervecería Boliviana Nacional (AB InBev)", description: "Opened and coded approximately 100 points of sale during AB InBev's Direct Sales launch. Consistently ranked among top performers in a team of 50+ executives.", status: "completed", color: "#22C55E", icon: "🍺" },
+  { year: "2022–25", title: "Key Account Manager – Wholesalers", company: "Intcomex Bolivia", description: "Trusted relationship manager for the largest wholesalers in Cochabamba. Handled high-value client relationships while organizing trainings, activations, and building Python automation scripts for sales reporting.", status: "completed", color: "#22C55E", icon: "💼" },
+  { year: "Now", title: "Operations Automation Specialist", company: "Upwork & Independent Clients", description: "Building Python automation tools, data workflows, API integrations, dashboards, alert systems, and practical internal tools for businesses that need to reduce manual work.", status: "in-progress", color: "#1A73E8", icon: "🚀" },
 ];
 
 function TimelineCard({ entry, index }: { entry: TimelineEntry; index: number }) {
@@ -71,7 +71,7 @@ export default function Timeline() {
         <motion.div ref={headerRef} className="text-center mb-20" initial={{ opacity: 0, y: 30 }} animate={headerInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}>
           <motion.span className="inline-block text-xs font-bold tracking-[0.25em] text-[#1A73E8] uppercase mb-4 px-4 py-2 bg-[#1A73E8]/5 rounded-full" initial={{ opacity: 0, scale: 0.8 }} animate={headerInView ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.5, delay: 0.2 }}>Career Journey</motion.span>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mt-4">My Career Timeline</h2>
-          <p className="text-[#64748B] mt-4 max-w-md mx-auto">From banking rotations to building AI solutions — a path driven by curiosity and hustle.</p>
+          <p className="text-[#64748B] mt-4 max-w-md mx-auto">From banking rotations to building automation systems — a path driven by curiosity and hustle.</p>
         </motion.div>
         <div className="relative">
           {timelineData.map((entry, idx) => <TimelineCard key={idx} entry={entry} index={idx} />)}

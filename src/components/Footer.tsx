@@ -9,7 +9,7 @@ export default function Footer() {
             Nicolas<span className="text-[#1A73E8]">.</span>
           </motion.div>
           <div className="flex items-center gap-8 text-sm text-[#64748B]">
-            {["About", "Timeline", "Skills", "Services", "Projects", "Contact"].map((item) => (
+            {["About", "Skills", "Services", "Projects", "Contact"].map((item) => (
               <button key={item} onClick={() => document.getElementById(item.toLowerCase())?.scrollIntoView({ behavior: "smooth" })} className="hover:text-white transition-colors duration-200">{item}</button>
             ))}
           </div>

@@ -4,13 +4,61 @@ import { useRef, useState } from "react";
 interface Project { title: string; description: string; tags: string[]; link?: string; color: string; icon: string; }
 
 const projects: Project[] = [
-  { title: "Sessions with Opening/Closing Multi-Timeframe", description: "TradingView indicator showing session open/close levels across multiple timeframes. Used by active day traders for timing entries.", tags: ["Pine Script", "TradingView", "Indicators"], link: "https://es.tradingview.com/script/15bIFKpL-Sessions-with-Opening-Closing-Multi-timeframe/", color: "#22C55E", icon: "📊" },
-  { title: "SOL 15m Momentum Scalper", description: "High-frequency scalping bot for Solana using momentum indicators on 15-minute candles. Built with Python + ccxt.", tags: ["Python", "ccxt", "Crypto", "Scalping"], link: "https://es.tradingview.com/script/YdmCARfZ/", color: "#9945FF", icon: "⚡" },
-  { title: "XRP 15m VWAP EMA Cloud Scalper Pro", description: "Advanced XRP trading system combining VWAP and EMA cloud strategies. Real-time signal generation with Telegram alerts.", tags: ["Python", "VWAP", "EMA", "Telegram Bot"], link: "https://es.tradingview.com/script/RMOxl45V/", color: "#00AAE4", icon: "🌊" },
-  { title: "AI Portfolio Chatbot", description: "Interactive AI assistant for this portfolio site, powered by Gemini API. Demonstrates chatbot integration and NLP capabilities.", tags: ["React", "Gemini API", "TypeScript"], color: "#1A73E8", icon: "🤖" },
-  { title: "Portfolio Website (You're Here!)", description: "Premium portfolio built from scratch with React 19, TypeScript, Vite 6, and Tailwind CSS 4. Features particle field, 3D tilt cards, typewriter effect, glass morphism navbar, scroll animations, and the AI chatbot you're talking to right now.", tags: ["React 19", "TypeScript", "Vite 6", "Tailwind CSS 4", "Framer Motion"], color: "#06B6D4", icon: "🌐" },
-  { title: "Enterprise Process Automation", description: "Custom Python automation pipelines built for Intcomex Bolivia. Streamlined wholesale operations and reporting.", tags: ["Python", "Automation", "Enterprise"], color: "#F59E0B", icon: "⚙️" },
-  { title: "Bilingual Customer Success System", description: "Customer support framework with English/Spanish routing, ticket management, and automated follow-ups.", tags: ["Python", "CRM", "i18n"], color: "#EC4899", icon: "🌐" },
+  {
+    title: "Business Automation Portfolio Website",
+    description: "Professional portfolio website built with React, TypeScript, Tailwind, Framer Motion, and an offline chatbot widget. Designed to present services, projects, contact options, and client-facing automation capabilities.",
+    tags: ["React", "TypeScript", "Tailwind", "Framer Motion", "Chatbot"],
+    link: "https://portfolio-eta-ochre-12.vercel.app/",
+    color: "#06B6D4",
+    icon: "🌐",
+  },
+  {
+    title: "Real-Time Monitoring Dashboard / MANTIS",
+    description: "Built a real-time monitoring system with live data ingestion, event detection, dashboard logic, and alert-style architecture. Demonstrates streaming data, event monitoring, dashboard design, and operational monitoring.",
+    tags: ["Python", "FastAPI", "WebSocket", "Dashboard", "Monitoring"],
+    link: "https://github.com/ShrPaw/mantis",
+    color: "#1A73E8",
+    icon: "📡",
+  },
+  {
+    title: "Python Market Data Pipeline",
+    description: "Built data pipelines to collect, clean, aggregate, and structure high-volume market data for analysis, validation, and reporting workflows.",
+    tags: ["Python", "Pandas", "Data Pipeline", "Automation"],
+    link: "https://github.com/ShrPaw/btc-quant-research",
+    color: "#22C55E",
+    icon: "📊",
+  },
+  {
+    title: "Automated Signal & Alert System",
+    description: "Built automated monitoring and alert workflows with continuous signal generation, TradingView-style logic, Telegram notifications, and execution-ready architecture.",
+    tags: ["Python", "Automation", "Telegram", "Alerts", "APIs"],
+    link: "https://github.com/ShrPaw/btc-intraday-system",
+    color: "#F59E0B",
+    icon: "🔔",
+  },
+  {
+    title: "Enterprise Process Automation",
+    description: "Built Python automation scripts and reporting workflows to support commercial operations, account tracking, and sales reporting in a real business environment.",
+    tags: ["Python", "Reports", "Sales Ops", "Automation"],
+    color: "#8B5CF6",
+    icon: "⚙️",
+  },
+  {
+    title: "Conversion-Focused Business Websites",
+    description: "Built landing page and e-commerce style projects focused on clear positioning, service presentation, calls to action, and client-facing conversion flow.",
+    tags: ["HTML", "CSS", "Landing Page", "E-commerce", "Conversion"],
+    link: "https://github.com/ShrPaw/pawsolace-store",
+    color: "#EC4899",
+    icon: "🛒",
+  },
+  {
+    title: "TradingView Multi-Timeframe Indicator",
+    description: "Built a TradingView indicator showing session open/close levels across multiple timeframes. Used as proof of scripting, alert logic, and market-monitoring tool development.",
+    tags: ["Pine Script", "TradingView", "Indicators", "Alerts"],
+    link: "https://es.tradingview.com/script/15bIFKpL-Sessions-with-Opening-Closing-Multi-timeframe/",
+    color: "#10B981",
+    icon: "📈",
+  },
 ];
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
@@ -52,7 +100,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           </div>
           {project.link && (
             <div className="mt-5 flex items-center gap-2 text-sm font-medium text-[#1A73E8] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              View on TradingView
+              View Project
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </div>
           )}
@@ -73,7 +121,7 @@ export default function Projects() {
         <motion.div ref={headerRef} className="text-center mb-16" initial={{ opacity: 0, y: 30 }} animate={headerInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
           <motion.span className="inline-block text-xs font-bold tracking-[0.25em] text-[#1A73E8] uppercase mb-4 px-4 py-2 bg-[#1A73E8]/5 rounded-full" initial={{ opacity: 0, scale: 0.8 }} animate={headerInView ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.5, delay: 0.2 }}>My Work</motion.span>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mt-4">Featured Projects</h2>
-          <p className="text-[#64748B] mt-4 max-w-lg mx-auto">Real solutions for real problems — trading bots, AI prototypes, and enterprise automations.</p>
+          <p className="text-[#64748B] mt-4 max-w-lg mx-auto">Real systems built to automate workflows, structure data, monitor events, and support business operations.</p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, idx) => <ProjectCard key={idx} project={project} index={idx} />)}

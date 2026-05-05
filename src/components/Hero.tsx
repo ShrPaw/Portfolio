@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ParticleField from "./ParticleField";
 
-const roles = ["Data Analyst", "Python Developer", "AI Specialist", "Automation Expert"];
+const roles = ["Operations Automation Specialist", "Python Automation Builder", "Data Workflow Developer", "API Integration Specialist"];
 
 function TypewriterText() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -54,7 +54,7 @@ function MagneticButton({ children, className, onClick }: { children: React.Reac
 
 export default function Hero() {
   const scrollToContact = () => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-  const scrollToServices = () => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+  const scrollToProjects = () => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
 
   return (
     <section className="min-h-screen flex items-center justify-center pt-20 pb-16 px-6 relative overflow-hidden bg-white">
@@ -83,7 +83,7 @@ export default function Hero() {
         {/* Availability badge */}
         <motion.div className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-[#0F172A]/[0.03] backdrop-blur-sm border border-[#E2E8F0] rounded-full" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }}>
           <motion.div className="w-2.5 h-2.5 bg-[#22C55E] rounded-full" animate={{ scale: [1, 1.3, 1], opacity: [1, 0.7, 1] }} transition={{ duration: 2, repeat: Infinity }} />
-          <span className="text-sm font-medium text-[#64748B]">Open to full-time & freelance</span>
+          <span className="text-sm font-medium text-[#64748B]">Available for freelance, contract & remote roles</span>
         </motion.div>
 
         {/* Name */}
@@ -101,27 +101,27 @@ export default function Hero() {
         </motion.div>
 
         <motion.p className="text-base md:text-lg text-[#64748B] max-w-xl leading-relaxed" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }}>
-          Ex-Intcomex & AB InBev • 4+ years building automations, AI chatbots, trading systems & data solutions for real business problems.
+          I help businesses reduce manual work with Python automation, data workflows, API integrations, reports, dashboards, and practical internal tools.
         </motion.p>
 
         <motion.div className="flex flex-col sm:flex-row gap-4 mt-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.8 }}>
           <MagneticButton onClick={scrollToContact} className="px-8 py-4 text-base font-semibold rounded-xl bg-[#0F172A] text-white hover:bg-[#0F172A]/90 transition-colors duration-200 shadow-lg shadow-[#0F172A]/20">
-            Hire Me (Full-time) →
+            Hire Me on Upwork →
           </MagneticButton>
-          <MagneticButton onClick={scrollToServices} className="px-8 py-4 text-base font-semibold rounded-xl border-2 border-[#FACC15] text-[#0F172A] bg-white hover:bg-[#FACC15]/10 transition-colors duration-200">
-            💼 Freelance Services
+          <MagneticButton onClick={scrollToProjects} className="px-8 py-4 text-base font-semibold rounded-xl border-2 border-[#FACC15] text-[#0F172A] bg-white hover:bg-[#FACC15]/10 transition-colors duration-200">
+            View Automation Projects
           </MagneticButton>
         </motion.div>
 
         <motion.a href="/cv-nicolas-bustamante.html" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-[#64748B] hover:text-[#1A73E8] transition-colors duration-200 group" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.9 }}>
           <svg className="w-4 h-4 group-hover:translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-          Download CV / Resume
+          Download Resume
         </motion.a>
 
         <motion.div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-[#64748B]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1 }}>
           <span className="flex items-center gap-1.5"><span className="text-lg">🇧🇴</span> Bolivia</span>
           <span className="w-1 h-1 bg-[#CBD5E1] rounded-full" />
-          <span className="flex items-center gap-1.5"><span className="text-lg">🇺🇸</span> USA Clients</span>
+          <span className="flex items-center gap-1.5"><span className="text-lg">🇺🇸</span> Remote Clients</span>
           <span className="w-1 h-1 bg-[#CBD5E1] rounded-full" />
           <span>Bilingual EN/ES</span>
         </motion.div>

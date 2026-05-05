@@ -4,10 +4,10 @@ import { motion, useInView } from "framer-motion";
 interface Stat { value: number; suffix: string; label: string; prefix?: string; }
 
 const stats: Stat[] = [
-  { value: 4, suffix: "+", label: "Years Experience" },
-  { value: 100, suffix: "+", label: "Points of Sale Coded" },
-  { value: 2, suffix: "M+", prefix: "~", label: "BOB Monthly Managed" },
-  { value: 5, suffix: "+", label: "Trading Bots Built" },
+  { value: 5, suffix: "+", label: "Years Business Experience" },
+  { value: 100, suffix: "+", label: "Points of Sale Opened" },
+  { value: 500, suffix: "K+", prefix: "~", label: "Weekly Flow Managed" },
+  { value: 5, suffix: "+", label: "Automation Tools Built" },
 ];
 
 function AnimatedNumber({ value, suffix, prefix, inView }: { value: number; suffix: string; prefix?: string; inView: boolean }) {

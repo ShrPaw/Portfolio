@@ -4,12 +4,12 @@ import { useRef, useState } from "react";
 interface Skill { icon: string; label: string; desc: string; level: number; color: string; }
 
 const skills: Skill[] = [
-  { icon: "fab fa-python", label: "Python", desc: "Automations, Scripting & Backend", level: 90, color: "#3776AB" },
-  { icon: "fas fa-robot", label: "AI Prototypes", desc: "Chatbots & Intelligent Systems", level: 85, color: "#1A73E8" },
-  { icon: "fas fa-chart-line", label: "Trading Systems", desc: "Live Indicators & Scalping Bots", level: 88, color: "#22C55E" },
-  { icon: "fas fa-cogs", label: "Enterprise", desc: "Intcomex & AB InBev Scale", level: 92, color: "#F59E0B" },
-  { icon: "fas fa-headset", label: "Customer Success", desc: "Bilingual Support & CX", level: 95, color: "#8B5CF6" },
-  { icon: "fas fa-globe", label: "Bilingual Ops", desc: "English & Spanish Native", level: 100, color: "#EC4899" },
+  { icon: "fab fa-python", label: "Python Automation", desc: "Scripts, APIs & workflow tools", level: 90, color: "#3776AB" },
+  { icon: "fas fa-plug", label: "API Integration", desc: "Connect tools, data and alerts", level: 85, color: "#1A73E8" },
+  { icon: "fas fa-table", label: "Data Operations", desc: "CSV, Excel, reports & pipelines", level: 88, color: "#22C55E" },
+  { icon: "fas fa-cogs", label: "Business Operations", desc: "Sales, support & process improvement", level: 92, color: "#F59E0B" },
+  { icon: "fas fa-headset", label: "Customer Success", desc: "Bilingual client communication", level: 95, color: "#8B5CF6" },
+  { icon: "fas fa-globe", label: "Bilingual EN/ES", desc: "Spanish native, English C1", level: 100, color: "#EC4899" },
 ];
 
 function ProgressRing({ level, color, inView }: { level: number; color: string; inView: boolean }) {

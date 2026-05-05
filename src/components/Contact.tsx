@@ -25,7 +25,7 @@ export default function Contact() {
         <motion.div className="text-center mb-14" initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
           <motion.span className="inline-block text-xs font-bold tracking-[0.25em] text-[#1A73E8] uppercase mb-4 px-4 py-2 bg-[#1A73E8]/5 rounded-full" initial={{ opacity: 0, scale: 0.8 }} animate={isInView ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.5, delay: 0.2 }}>Get in Touch</motion.span>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mt-4">Let's Work Together</h2>
-          <p className="text-[#64748B] mt-4 max-w-md mx-auto">Ready to automate your processes, build trading systems, or prototype an AI solution? Let's talk.</p>
+          <p className="text-[#64748B] mt-4 max-w-md mx-auto">Ready to automate a manual process, clean your data, connect an API, or build a simple internal tool? Let's talk.</p>
         </motion.div>
 
         <motion.div className="bg-white rounded-3xl border border-[#E2E8F0] shadow-xl shadow-[#0F172A]/5 p-8 md:p-12 relative overflow-hidden" initial={{ opacity: 0, y: 40 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay: 0.2 }}>
@@ -73,7 +73,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="text-xs text-[#64748B] font-medium uppercase tracking-wider">Status</div>
-                <div className="text-[#0F172A] font-semibold">Available for new projects</div>
+                <div className="text-[#0F172A] font-semibold">Available for freelance, contract & remote roles</div>
               </div>
             </div>
 

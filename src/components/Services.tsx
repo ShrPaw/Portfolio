@@ -4,11 +4,52 @@ import { useRef } from "react";
 interface Service { icon: string; title: string; description: string; features: string[]; priceRange: string; popular?: boolean; color: string; bgColor: string; }
 
 const services: Service[] = [
-  { icon: "🐍", title: "Python Automation", description: "Custom scripts that save hours of manual work. Data processing, file handling, API integrations, workflow automation.", features: ["Custom Python scripts", "Scheduled task automation", "API integrations", "Data pipeline setup"], priceRange: "$50–200", color: "#3776AB", bgColor: "#3776AB10" },
-  { icon: "🤖", title: "AI Chatbot Development", description: "Intelligent chatbots powered by LLMs (Gemini, OpenAI). Customer support, lead generation, internal tools.", features: ["Custom AI chatbot", "Knowledge base integration", "Multi-language support", "Analytics dashboard"], priceRange: "$150–500", popular: true, color: "#1A73E8", bgColor: "#1A73E810" },
-  { icon: "📊", title: "Data Analysis & Dashboards", description: "Turn raw data into actionable insights. Excel/Python analysis, automated reports, interactive dashboards.", features: ["Data cleaning & analysis", "Automated Excel reports", "Interactive dashboards", "Visualization & charts"], priceRange: "$75–300", color: "#22C55E", bgColor: "#22C55E10" },
-  { icon: "📈", title: "Trading Bot Development", description: "Custom trading algorithms and indicators. Backtested strategies, live execution, Telegram alerts.", features: ["TradingView indicators", "Python trading bots", "Backtesting & optimization", "Real-time alerts"], priceRange: "$200–800", color: "#F59E0B", bgColor: "#F59E0B10" },
-  { icon: "🌐", title: "Bilingual Support Systems", description: "English/Spanish customer success setups. Ticket systems, automated responses, CRM configuration.", features: ["EN/ES support setup", "CRM configuration", "Automated workflows", "Knowledge base creation"], priceRange: "$100–400", color: "#EC4899", bgColor: "#EC489910" },
+  {
+    icon: "⚙️",
+    title: "Python Automation",
+    description: "Custom scripts that reduce manual work, process files, organize data, and connect simple workflows.",
+    features: ["Custom Python scripts", "Scheduled task automation", "File and data processing", "Workflow cleanup"],
+    priceRange: "$50–200",
+    popular: true,
+    color: "#3776AB",
+    bgColor: "#3776AB10",
+  },
+  {
+    icon: "📊",
+    title: "Data Processing & Reports",
+    description: "Turn messy CSV, Excel, or operational data into clean outputs, reports, and dashboards.",
+    features: ["CSV/Excel cleanup", "Automated reports", "Data transformation", "Dashboard-ready outputs"],
+    priceRange: "$50–300",
+    color: "#22C55E",
+    bgColor: "#22C55E10",
+  },
+  {
+    icon: "🔌",
+    title: "API Integration & Alerts",
+    description: "Connect APIs, collect data, send notifications, and move information between tools.",
+    features: ["API data collection", "Telegram/notification alerts", "Webhook workflows", "Simple backend automation"],
+    priceRange: "$100–400",
+    color: "#1A73E8",
+    bgColor: "#1A73E810",
+  },
+  {
+    icon: "🏢",
+    title: "Business Workflow Automation",
+    description: "Automation for sales, support, reporting, customer follow-up, and internal operations.",
+    features: ["Sales operations support", "Customer workflow automation", "CRM-ready processes", "Operational efficiency tools"],
+    priceRange: "$100–400",
+    color: "#F59E0B",
+    bgColor: "#F59E0B10",
+  },
+  {
+    icon: "💬",
+    title: "Website + Chatbot Demo",
+    description: "Simple client-facing websites with chatbot-style interaction and automation-ready contact flows.",
+    features: ["Responsive landing page", "Chatbot-style assistant", "Lead/contact flow", "Service presentation"],
+    priceRange: "$150–500",
+    color: "#EC4899",
+    bgColor: "#EC489910",
+  },
 ];
 
 function ServiceCard({ service, index }: { service: Service; index: number }) {
@@ -69,7 +110,7 @@ export default function Services() {
         <motion.div className="text-center mb-16" initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
           <motion.span className="inline-block text-xs font-bold tracking-[0.25em] text-[#1A73E8] uppercase mb-4 px-4 py-2 bg-[#1A73E8]/5 rounded-full" initial={{ opacity: 0, scale: 0.8 }} animate={isInView ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.5, delay: 0.2 }}>Freelance Services</motion.span>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mt-4">What I Can Build For You</h2>
-          <p className="text-[#64748B] mt-4 max-w-lg mx-auto">From quick automations to full AI systems — I deliver fast, reliable solutions. All work is done personally, no outsourcing.</p>
+          <p className="text-[#64748B] mt-4 max-w-lg mx-auto">From quick scripts to operational workflows — I build practical systems that save time, reduce errors, and make daily work easier.</p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, idx) => <ServiceCard key={idx} service={service} index={idx} />)}
