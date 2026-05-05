@@ -1,3 +1,4 @@
+// Services.tsx — Automation services with emotional positioning
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 

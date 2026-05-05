@@ -1,5 +1,7 @@
 # Nicolas Bustamante — Operations Automation Portfolio
 
+> Python automation, data workflows, API integrations, dashboards, alert systems, business operations, and client-facing tools.
+
 A premium portfolio website showcasing Python automation, data workflows, API integrations, business operations, client-facing tools, and practical automation systems.
 
 ## ✨ Features

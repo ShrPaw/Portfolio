@@ -1,3 +1,4 @@
+// Projects.tsx — Featured automation projects + technical labs
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 
